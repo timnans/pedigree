@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: pedigree_production
   username: pedigree
   password: <%= ENV["PEDIGREE_DATABASE_PASSWORD"] %>
